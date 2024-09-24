@@ -16,9 +16,134 @@
   justify-content: center;
   align-items: center;
 }
-.form {
-  width: 360px;
-  height: 400px;
-  min-width: 360px;
-  background-color: aquamarine;
+
+.login {
+  min-width: 400px;
+  padding: 10px 60px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.login__title {
+  margin-top: 7px;
+  margin-bottom: 20px;
+  color: var(--color-one);
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login__username, .login__password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.login__label {
+  color: var(--color-two);
+  font-weight: bold;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.login__input {
+  border-radius: 5px;
+  border: 0.5px solid var(--color-two);
+  padding: 7px 10px;
+  color: var(--color-two);
+  text-align: center;
+}
+
+.login__input::placeholder {
+  text-align: center;
+  color: var(--color-three);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login__input-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.login__input#password {
+  width: 100%;
+} 
+
+.login__password .login__icon {
+  position: absolute;
+  right: 10px;
+  z-index: 10;
+  color: var(--color-one);
+  cursor: pointer;
+}
+
+.login__btn--text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.login__btn {
+  margin: 0 auto;
+  display: flex;  /* cho loading và Login nằm cùng hàng */
+  align-items: center;
+  padding: 8px 30px;
+  border-radius: 8px;
+  border: transparent;
+  color: var(--color-two);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--color-one);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.login__register {
+  text-align: center;
+  color: var(--color-two);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 320px) {
+  .login {
+      min-width: 270px;
+      padding: 10px 20px;
+  }
+
+  .login__title {
+      font-size: 27px;
+  }
+
+  .login__label {
+      font-size: 14px;
+  }
+
+  .login__input::placeholder {
+      font-size: 13px;
+  }
+
+  .login__password .login__icon {
+      font-size: 13px;
+  }
+
+  .login__password .login__condition {
+      font-size: 10px;
+  }
+
+  .login__btn {
+      padding: 7px 25px;
+      font-size: 14px;
+  }
+
+  .login__btn--text {
+    font-size: 13px;
+  }
+
+  .login__register {
+      font-size: 14px;
+  }
 }

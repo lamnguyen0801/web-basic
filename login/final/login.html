@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HTML5 Boilerplate</title>
-    <link rel="stylesheet" href="../../css/santize.css" />
-    <link rel="stylesheet" href="../../css/theme.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="title">
-        <h1>Login: Final</h1>
-      </div>
-      <div class="content">
-        <div class="form"></div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 Boilerplate</title>
+  <link rel="stylesheet" href="../../css/santize.css" />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Login: Final</h1>
+    </div>
+    <div class="content">
+      <div class="login">
+        <h1 class="login__title">Login</h1>
+
+        <form class="login__form">
+          <div class="login__username">
+            <label class="login__label" for="username">Username</label>
+            <input type="text" placeholder="Input username" name="username" required id="username"
+              class="login__input" />
+          </div>
+          <div class="login__password">
+            <label class="login__label" for="password">Password</label>
+            <div class="login__input-icon">
+              <input type="password" placeholder="Input password" name="password" required id="password"
+                class="login__input" />
+              <div class="login__icon">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="login__btn">
+            <div class="loader"></div>
+            <span class="login__btn--text">Login</span>
+          </button>
+        </form>
+
+        <div class="login__register">
+          <span>Don't have account?</span>
+          <a href="#" target="_blank">Register Here</a>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
