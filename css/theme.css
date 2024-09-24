@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --font: "Iceberg", sans-serif;
+  --color-bg: #4A148C;
+  --color-one: #FF6F00;
+  --color-two: #6A1B9A;
+  --color-three: #CE93D8;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
+}
+
+
+/* animation loading */
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 4px solid #d35e04;
+  border-right-color: var(--color-two);
+  animation: l2 1s infinite linear;
+  margin-right: 5px;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .loader {
+    width: 12px;
+  }
 }
