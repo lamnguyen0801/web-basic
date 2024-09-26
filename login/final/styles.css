@@ -27,59 +27,12 @@
 
 .login__title {
   margin-top: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: var(--color-one);
   font-weight: bold;
   font-size: 35px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.login__username,
-.login__password {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.login__label {
-  color: var(--color-two);
-  font-weight: bold;
-  margin-bottom: 3px;
-  cursor: pointer;
-}
-
-.login__input {
-  border-radius: 5px;
-  border: 0.5px solid var(--color-two);
-  padding: 7px 10px;
-  color: var(--color-two);
-  text-align: center;
-}
-
-.login__input::placeholder {
-  text-align: center;
-  color: var(--color-three);
-  font-size: 14px;
-  font-style: italic;
-}
-
-.login__input-icon {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.login__input#password {
-  width: 100%;
-}
-
-.login__password .login__icon {
-  position: absolute;
-  right: 10px;
-  color: var(--color-one);
-  cursor: pointer;
 }
 
 .login__btn--text {
@@ -90,7 +43,6 @@
 .login__btn {
   margin: 0 auto;
   display: flex;
-  /* cho loading và Login nằm cùng hàng */
   align-items: center;
   padding: 8px 30px;
   border-radius: 8px;
