@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../../css/santize.css" />
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="../hint-02/input.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,20 +23,18 @@
         <h1 class="login__title">Login</h1>
 
         <form class="login__form">
-          <div class="input">
-            <label class="input__label" for="placeholder">Username</label>
-            <div class="input__container">
-              <input type="text" placeholder="Input username" name="username" required id="placeholder" />
-              <div class="input__icon"></div>
+          <div class="input__form">
+            <label class="input__label" for="username">Username</label>
+            <div class="input__content">
+              <input type="text" placeholder="Input username" name="username" required id="username" />
+              <i class="fa-solid fa-eye input__icon" style="visibility: hidden;"></i>
             </div>
           </div>
-          <div class="input">
-            <label class="input__label" for="placeholder">Password</label>
-            <div class="input__container">
-              <input type="password" placeholder="Input password" name="password" required id="placeholder" />
-              <div class="input__icon">
-                <i class="fa-solid fa-eye"></i>
-              </div>
+          <div class="input__form">
+            <label class="input__label" for="password">Password</label>
+            <div class="input__content">
+              <input type="password" placeholder="Input password" name="password" required id="password" />
+              <i class="fa-solid fa-eye input__icon"></i>
             </div>
           </div>
 
