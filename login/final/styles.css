@@ -20,64 +20,24 @@
 .login {
   width: 360px;
   min-width: 360px;
+  height: 360px;
   padding: 10px 40px;
   border: 1px solid transparent;
   border-radius: 15px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .login__title {
-  margin-top: 7px;
-  margin-bottom: 10px;
+  margin: 0;
   color: var(--color-one);
   font-weight: bold;
   font-size: 35px;
   text-align: center;
   text-transform: uppercase;
 }
-
-/* input */
-.input__form {
-  width: 100%;
-  padding-bottom: 15px;
-}
-
-.input__form .input__label {
-  color: var(--color-two);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.input__form .input__content {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--color-two);
-  border-radius: 4px;
-  padding: 7px;
-}
-
-.input__form .input__content:focus-within{
-  outline: 1px solid var(--color-bg);
-}
-
-.input__form .input__content input {
-  flex: 1;
-  border: none;
-  outline: none; /* bỏ border khi focus */
-  text-align: center;
-}
-
-.input__form .input__content input::placeholder {
-  font-style: italic;
-  color: var(--color-two);
-}
-
-.input__form .input__content .input__icon {
-  color: var(--color-one);
-  cursor: pointer;
-}
-
-/* End input */
 
 .login__btn--text {
   text-align: center;
@@ -95,40 +55,24 @@
   font-weight: 700;
   text-transform: uppercase;
   background-color: var(--color-one);
-  margin-bottom: 15px;
   cursor: pointer;
 }
 
 .login__register {
   text-align: center;
   color: var(--color-two);
-  margin-bottom: 10px;
 }
 
 @media (max-width: 320px) {
   .login {
     width: 270px;
+    min-width: 270px;
+    height: 270px;
     padding: 10px 25px;
   }
 
   .login__title {
     font-size: 27px;
-  }
-
-  .login__label {
-    font-size: 14px;
-  }
-
-  .login__input::placeholder {
-    font-size: 13px;
-  }
-
-  .login__password .login__icon {
-    font-size: 13px;
-  }
-
-  .login__password .login__condition {
-    font-size: 10px;
   }
 
   .login__btn {
