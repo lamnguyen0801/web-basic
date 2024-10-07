@@ -94,13 +94,6 @@ header {
         font-size: 18px;
     }
 
-    .header__nav li a {
-        font-size: 13px;
-        padding: 15px 20px;
-    }
-}
-
-@media (max-width: 576px) {
     .header__mobi {
         display: block;
     }
@@ -127,16 +120,12 @@ header {
         background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(10px);
         border-radius: 20px;
-        /* transform: translateY(-200%); */
-        /* display: none; */
         visibility: hidden;
         opacity: 0;
         transition: all 0.1s;
     }
 
     .header__input:checked ~ .header__nav {
-        /* transform: translateY(0); */
-        /* display: block; */
         visibility: visible;
         opacity: 1;
     }
