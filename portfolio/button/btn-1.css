@@ -8,6 +8,7 @@
     border: none;
     outline: 5px solid rgba(132, 132, 132, 0.5);
     position: relative;
+    cursor: pointer;
 }
 
 .btn-1::after {
