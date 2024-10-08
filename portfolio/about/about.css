@@ -1,0 +1,84 @@
+.about {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.about__image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image .about__frame-img {
+    height: 320px;
+    width: 320px;
+    background-image: url("../images/me3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 15px solid rgba(255, 189, 57, 1);
+    outline: 15px solid rgba(255, 189, 57, 0.3);
+}
+
+.about__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-title::after {
+    content: "About";
+}
+
+.about__content p {
+    color: var(--color-three);
+    font-size: 15px;
+}
+
+.about__content p span {
+    color: var(--color-one);
+}
+
+@media (max-width: 992px){
+    .about__content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    .about {
+        gap: 50px;
+    }
+
+    .about__content p {
+        font-size: 13px;
+    }
+
+    .about__image .about__frame-img {
+        height: 260px;
+        width: 260px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        gap: 20px;
+    }
+
+    .about__image {
+        width: 100%;
+    }
+
+    .about__image .about__frame-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about__content p {
+        font-size: 12px;
+    }
+}

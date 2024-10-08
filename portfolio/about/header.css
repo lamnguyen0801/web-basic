@@ -1,0 +1,147 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0 40px;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background: rgba(70, 70, 70, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 50px; 
+    z-index: -1; 
+}
+
+.header__title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.header__nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header__nav li a {
+    color: var(--color-one);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 25px;
+    transition: all 0.2s ease;
+}
+
+.header__nav li a:hover {
+    color: var(--color-two);
+    transition: all 0.2s ease;
+}
+
+.header__nav li a span {
+    position: relative;
+}
+
+.header__nav li a span::after {
+    content: "";
+    background-color: var(--color-two);
+    width: 100%;
+    height: 2.5px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.2s ease;
+}
+
+.header__nav li a:hover span::after {
+    transform: scaleX(1);
+}
+
+.header__mobi {
+    display: none;
+}
+
+@media (max-width: 992px){
+    .header__title {
+        font-size: 19px;
+    }
+
+    .header__nav li a {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .header__title {
+        font-size: 18px;
+    }
+
+    .header__mobi {
+        display: block;
+    }
+
+    .header__icon {
+        cursor: pointer;
+    }
+
+    .header__input {
+        display: none;
+    } 
+    
+    .header__icon--collapse {
+        display: none;
+    }
+
+    .header__nav {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.1s;
+    }
+
+    .header__input:checked ~ .header__nav {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header__input:checked ~ .header__icon--show {
+        display: none;
+    }
+
+    .header__input:checked ~ .header__icon--collapse {
+        display: block;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 16px;
+    }
+}
+
