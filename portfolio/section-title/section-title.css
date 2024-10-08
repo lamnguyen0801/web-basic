@@ -1,0 +1,58 @@
+.section-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "Section";
+    font-weight: bold;
+    font-size: 85px;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(3px);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 48px;
+    }
+
+    .section-title::after {
+        font-size: 83px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 46px;
+    }
+
+    .section-title::after {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-title {
+        font-size: 44px;
+    }
+
+    .section-title::after {
+        font-size: 76px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-title {
+        font-size: 42px;
+    }
+
+    .section-title::after {
+        font-size: 70px;
+    }
+}
