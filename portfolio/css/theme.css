@@ -33,35 +33,31 @@ body {
 @media (max-width: 992px){
     .container {
         max-width: 840px;
-        gap: 75px;
     }
 }
 
 @media (max-width: 768px){
     .container {
         max-width: 720px;
-        gap: 70px;
     }
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 460px;
-        gap: 65px; 
+        gap: 70px; 
     }
 }
 
 @media (max-width: 426px) {
     .container {
         max-width: 380px;
-        gap: 60px;
     }
 }
 
 @media (max-width: 376px) {
     .container {
         max-width: 320px;
-        gap: 55px;
     }
 }
 
