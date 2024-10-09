@@ -33,34 +33,42 @@ body {
 @media (max-width: 992px){
     .container {
         max-width: 840px;
-        gap: 70px;
+        gap: 75px;
     }
 }
 
 @media (max-width: 768px){
     .container {
         max-width: 720px;
-        gap: 60px;
+        gap: 70px;
     }
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 460px;
-        gap: 50px; 
+        gap: 65px; 
+    }
+}
+
+@media (max-width: 426px) {
+    .container {
+        max-width: 390px;
+        gap: 60px;
     }
 }
 
 @media (max-width: 376px) {
     .container {
         max-width: 320px;
-        gap: 40px;
+        gap: 55px;
     }
 }
 
 @media (max-width: 320px) {
     .container {
         max-width: 300px;
+        gap: 50px;
     }
 }
 
