@@ -12,6 +12,8 @@ body {
     font-family: var(--font);
     background-color: var(--color-bg);
     color: var(--color-one);
+    font-size: 15px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -52,6 +54,7 @@ body {
 @media (max-width: 426px) {
     .container {
         max-width: 380px;
+        padding: 30px 20px;
     }
 }
 
@@ -64,7 +67,7 @@ body {
 @media (max-width: 320px) {
     .container {
         max-width: 300px;
-        gap: 50px;
+        gap: 60px;
     }
 }
 
