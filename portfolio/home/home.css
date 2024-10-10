@@ -150,6 +150,7 @@
 
 @media (max-width: 426px) {
     .home {
+        flex-direction: column;
         position: relative;
     }
 
@@ -157,9 +158,7 @@
         width: 100%;
         gap: 40px;
         text-align: center;
-        position: relative;
-        z-index: 1;
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .home__content--hello {
@@ -181,19 +180,19 @@
 
     .home__image {
         width: 100%;
-        height: 100%;
-        margin: 0 auto;
+        height: 100%; 
         position: absolute;
         top: 0;
-        left: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: -1;
         filter: blur(2px);
     }
 }
 
 @media (max-width: 376px) {
     .home__content {
-        gap: 30px;
-        padding: 90px 0;
+        gap: 20px;
     }
 
     .home__content--hello {
@@ -209,4 +208,21 @@
     }
 }
 
+@media (max-width: 320px) {
+    .home__content {
+        gap: 20px;
+    }
+
+    .home__content--hello {
+        font-size: 13px;
+    }
+    
+    .home__content--name {
+        font-size: 22px;
+    }
+
+    .home__content--job {
+        font-size: 28px;
+    }
+}
 
