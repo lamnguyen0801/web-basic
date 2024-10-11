@@ -1,7 +1,7 @@
 .about {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 6.7em;
     flex-wrap: wrap;
 }
 
@@ -13,8 +13,8 @@
 }
 
 .about__image .about__frame-img {
-    height: 320px;
-    width: 320px;
+    height: 21em;
+    width: 21em;
     background-image: url("../images/me3.jpg");
     background-position: center;
     background-size: cover;
@@ -27,7 +27,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2em;
 }
 
 .section-title::after {
@@ -36,7 +36,7 @@
 
 .about__content p {
     color: var(--color-three);
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .about__content p span {
@@ -45,28 +45,24 @@
 
 @media (max-width: 992px){
     .about__content p {
-        font-size: 14px;
+        font-size: 1em;
     }
 }
 
 @media (max-width: 768px){
     .about {
-        gap: 50px;
-    }
-
-    .about__content p {
-        font-size: 13px;
+        gap: 3.85em;
     }
 
     .about__image .about__frame-img {
-        height: 260px;
-        width: 260px;
+        height: 18.5em;
+        width: 18.5em;
     }
 }
 
 @media (max-width: 576px) {
     .about {
-        gap: 20px;
+        gap: 2em;
     }
 
     .about__image {
@@ -74,11 +70,7 @@
     }
 
     .about__image .about__frame-img {
-        height: 200px;
-        width: 200px;
-    }
-
-    .about__content p {
-        font-size: 12px;
+        height: 15em;
+        width: 15em;
     }
 }
