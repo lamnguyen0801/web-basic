@@ -156,13 +156,14 @@
     .home {
         flex-direction: column;
         position: relative;
+        margin-bottom: 2em;
     }
 
     .home__content {
         width: 100%;
         gap: 3em;
         text-align: center;
-        padding: 3.85em 0;
+        padding: 5em 0;
     }
 
     .home__content--hello {
