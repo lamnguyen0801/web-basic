@@ -77,6 +77,10 @@
 }
 
 @media (max-width: 1200px){
+    .home {
+        gap: 3.5em;
+    }
+
     .home__content {
         gap: 1.35em;
     }
@@ -124,13 +128,13 @@
     .home__content--job {
         font-size: 2.7em;
     }
+
+    .home__image {
+        aspect-ratio: 2/3;
+    }
 }
 
 @media (max-width: 576px) {
-    /* .home__content {
-        width: 55%;
-    } */
-
     .home__content--hello {
         font-size: 0.75em;
     }
