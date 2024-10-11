@@ -33,14 +33,23 @@ body {
 }
 
 @media (max-width: 992px){
+    body {
+        font-size: 14px;
+    }
+
     .container {
         max-width: 840px;
     }
 }
 
 @media (max-width: 768px){
+    body {
+        font-size: 13px;
+    }
+
     .container {
         max-width: 720px;
+        padding: 30px 20px;
     }
 }
 
@@ -54,7 +63,6 @@ body {
 @media (max-width: 426px) {
     .container {
         max-width: 380px;
-        padding: 30px 20px;
     }
 }
 
