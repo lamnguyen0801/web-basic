@@ -10,7 +10,7 @@
     position: relative;
     cursor: pointer;
     white-space: nowrap;
-    margin-left: 10px;
+    margin-left: 10px; /* minus border and ouline */
 }
 
 .btn-1::after {
