@@ -1,0 +1,50 @@
+.section-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: "Section";
+    font-weight: bold;
+    font-size: 1.65em;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(3px);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3.6em;
+    }
+
+    .section-title::after {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 3.5em;
+    }
+
+    .section-title::after {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 376px) {
+    .section-title {
+        font-size: 3.2em;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-title {
+        font-size: 3em;
+    }
+}
