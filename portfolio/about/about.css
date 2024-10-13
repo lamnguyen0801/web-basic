@@ -30,7 +30,7 @@
     gap: 2em;
 }
 
-.section-title::after {
+.about__content .section-title::after {
     content: "About";
 }
 
