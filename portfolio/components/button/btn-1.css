@@ -10,7 +10,7 @@
     position: relative;
     cursor: pointer;
     white-space: nowrap;
-    margin-left: 10px; /* minus border and ouline */
+    margin-left: 10px; /* trừ đi outline và phần lộ ra của after*/
 }
 
 .btn-1::after {
