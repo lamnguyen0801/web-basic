@@ -20,10 +20,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 2em 1.35em;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 7em;
 }
 
 @media (max-width: 1200px){
@@ -55,7 +55,7 @@ body {
 @media (max-width: 576px) {
     .container {
         max-width: 460px;
-        gap: 70px; 
+        gap: 6em; 
     }
 }
 
@@ -74,7 +74,7 @@ body {
 @media (max-width: 320px) {
     .container {
         max-width: 300px;
-        gap: 60px;
+        gap: 5em;
     }
 }
 
