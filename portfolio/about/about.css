@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15px; /* trừ đi outline */
 }
 
 .about__image .about__frame-img {
