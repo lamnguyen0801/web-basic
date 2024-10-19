@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="../../css/santize.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="carousel.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../images/slide1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/slide2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/slide3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/slide4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/slide5.png" />
+                    </div>
+                </div>
+
+                <div class="swiper-button swiper-button-prev-custom">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </div>
+                <div class="swiper-button swiper-button-next-custom">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="carousel.js" type="module"></script>
+</body>
+
+</html>

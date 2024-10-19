@@ -1,0 +1,126 @@
+#skills {
+    scroll-margin-top: 160px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.skills .section-title::after {
+    content: "Skills";
+}
+
+.skills__tech,
+.skills__soft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__title {
+    font-size: 1.35em;
+    font-weight: 500;
+}
+
+.skills__list-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.skills__list-tech img {
+    width: 4em;
+    height: 4em;
+}
+
+.skills__list-soft {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skills__list-soft li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 25px; /* tạo khoảng trống cho icon check */
+}
+
+.skills__list-soft li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-two);
+    font-size: 1.2em;
+    font-weight: bold; /* icon solid yêu cầu */
+}
+
+@media (max-width: 992px){
+    .skills__title {
+        font-size: 1.3em;
+    }
+
+    .skills__list-tech img {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+@media (max-width: 768px){
+    .skills__title {
+        font-size: 1.25em;
+    }
+
+    .skills__list-tech {
+        gap: 1.5em;
+    }
+
+    .skills__list-tech img {
+        width: 3.2em;
+        height: 3.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills__title {
+        font-size: 1.2em;
+    }
+
+    .skills__list-tech {
+        width: 90%;
+    }
+
+    .skills__list-tech img {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media (max-width: 426px) {
+    .skills__list-tech {
+        width: 50%;
+        gap: 1.5em;
+    }
+
+    .skills__title {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 376px) {
+    .skills__list-tech {
+        width: 70%;
+    }
+
+    .skills__list-soft {
+        width: 70%;
+    }
+}
+
+

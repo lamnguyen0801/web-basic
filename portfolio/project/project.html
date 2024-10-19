@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Project</title>
     <link rel="stylesheet" href="../css/santize.css">
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../components/button/btn-1.css">
+    <link rel="stylesheet" href="../components/button/btn-2.css">
+    <link rel="stylesheet" href="../components/button/btn-3.css">
     <link rel="stylesheet" href="../components/section-title/section-title.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../components/carousel/carousel.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -121,7 +126,90 @@
                 </div>
             </div>
         </div>
+
+        <div class="project" id="project">
+            <div class="section-title">My project</div>
+            <div class="project__inner">
+                <div class="project__content">
+                    <div class="project__name">
+                        <div class="project__name-img">
+                            <img src="../images/arcticons--projectm.png" alt="ảnh icon project" />
+                        </div>
+                        <p>Multiple choice questions about driving license</p>
+                    </div>
+                    <div class="project__inner-content">
+                        <p class="project__desc">
+                            Website for practicing car driving license exam <br />with <span>many topics</span> and
+                            <span>mock tests</span>
+                        </p>
+                        <div class="project__tech">
+                            <div class="project__tech-block">
+                                <img src="../images/react-pj.png" alt="ảnh icon ReactJS">
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/sass-pj.png" alt="ảnh icon SASS">
+                                <span>SASS</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/antdesign-pj.png" alt="ảnh icon antd">
+                                <span>Ant Design</span>
+                            </div>
+                            <div class="project__tech-block">
+                                <img src="../images/json-pj.png" alt="ảnh icon json-server">
+                                <span>JSON Server</span>
+                            </div>
+                        </div>
+                        <div class="project__demo-source">
+                            <a href="https://quiz-gplx.vercel.app/" target="_blank" class="btn-3 btn-3--color-two">
+                                Demo
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/lamnguyen0801/Quiz-GPLX" target="_blank" class="btn-3 btn-3--color-three">
+                                Source
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../images/slide1.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide2.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide3.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide4.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/slide5.png" />
+                            </div>
+                        </div>
+            
+                        <div class="swiper-button swiper-button-prev-custom">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button swiper-button-next-custom">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../components/carousel/carousel.js" type="module"></script>
 </body>
 
 </html>
