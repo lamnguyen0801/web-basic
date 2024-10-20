@@ -66,6 +66,10 @@
 }
 
 @media (max-width: 576px) {
+    #about {
+        scroll-margin-top: 100px;
+    }
+
     .about {
         gap: 2em;
     }
